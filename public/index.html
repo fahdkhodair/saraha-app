@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button id="google-signin-button">Sign in with Google</button>
+  <div id="g_id_onload"
+       data-client_id="YOUR_CLIENT_ID.apps.googleusercontent.com"
+       data-callback="handleCredentialResponse">
+  </div>
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+  <script>
+    function handleCredentialResponse(response) {
+      console.log("ID token: " + response.credential);
+      fetch('http://localhost:3000/auth/signup/gmail', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ idtoken: response.credential }),
+        credentials: 'include'
+      })
+    }
+  </script>
+</body>
+</html>
