@@ -1,4 +1,4 @@
-roject Name: Saraha App – Anonymous Messaging REST API
+project Name: Saraha App – Anonymous Messaging REST API
 
 Description:
 A backend application built with Node.js and Express.js that allows users to send anonymous messages. Designed for scalability and secure user authentication.
