@@ -1,33 +1,27 @@
-Saraha App is a web application that allows users to receive anonymous messages without revealing the identity of the sender. The platform encourages honest and open communication in a simple and secure way.
+# Saraha App (Node.js + Express + MySQL)
 
-🚀 Features
+A REST API for anonymous messaging app.
 
-User Registration & Login
+## Features
+- User registration & login (JWT Authentication)
+- Message CRUD (Create / Read / Update / Delete)
 
-Send anonymous messages (no sender identity shown)
+## Tech Stack
+- Node.js
+- Express.js
+- MySQL
+- JSON Web Tokens (JWT)
 
-User dashboard to view received messages
+## How to Run
+1. Clone the repo
+2. Run `npm install`
+3. Setup database
+4. Run `npm start`
 
-Delete messages
+## Demo
+![screenshot](link_to_image)
 
-JWT-based authentication
 
-Protected routes
-
-Clean and responsive UI
-Node.js
-
-Express.js
-
-MongoDB
-
-Mongoose
-
-JWT (JSON Web Token)
-
-bcrypt
-git clone https://github.com/your-username/saraha-app.git
-cd saraha-app
 
 
 
